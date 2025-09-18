@@ -1,0 +1,892 @@
+*{
+    font-family: 'Franklin Gothic Medium',  sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+/* nav bar  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav h1 a{
+    font-family: "Playwrite AU NSW", cursive;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline;
+    padding: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav h1 a:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    color: blue;
+}
+
+/* hamburger */
+
+.hamburger{
+    display: none;
+}
+
+/* animation  */
+
+/* Slide from right */
+.animate-right {
+  opacity: 0;
+  transform: translateX(25px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+.animate-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide from left */
+.animate-left {
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+.animate-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Flip from top */
+.animate-flip-top {
+  opacity: 0;
+  transform: rotateX(-90deg);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  transform-origin: top;
+}
+.animate-flip-top.show {
+  opacity: 1;
+  transform: rotateX(0);
+}
+
+/* Flip from bottom */
+.animate-flip-bottom {
+  opacity: 0;
+  transform: rotateX(90deg);
+  transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  transform-origin: bottom;
+}
+.animate-flip-bottom.show {
+  opacity: 1;
+  transform: rotateX(0);
+}
+
+
+/* section experience  */
+
+.sec1{
+    background-image: url("images/feem_6B0FE_IMG_7412 - Edited.jpg_edited.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 90px;
+    padding: 10px 30px;
+    align-items:center;
+    text-align: center;
+}
+
+.sec1 .okay {
+	-webkit-animation: flip-scale-2-hor-bottom 0.5s linear both;
+	animation: flip-scale-2-hor-bottom 0.5s linear both;
+}
+
+
+.sec1 h2 {
+    font-size: 60px;
+    font-family: cursive;
+    font-style: italic;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    color: white;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;  
+}
+
+.sec1 h1 {
+    font-size: 80px;
+    font-family: "Playwrite AU NSW", cursive;
+    margin-bottom: 20px;
+    color: yellowgreen;
+    z-index: 1;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;                 
+}
+
+.sec1 p {
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times,  serif;
+    margin-bottom: 60px;
+    color: whitesmoke;
+}
+
+.sec1 button{
+    padding: 30px 40px;
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.sec1 button a{
+    color: greenyellow;
+    text-decoration: none;
+    font-family: cursive;
+    font-size: 20px;
+}
+
+.sec1 button:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: darkgreen;
+    color: black;
+}
+
+/* section 2 Professional Services */
+
+.sec2 {
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.sec2 h1{
+    font-size: 60px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT',  sans-serif;
+    margin-top: 100px;
+    font-style: italic;
+}
+
+.sec2 p{
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+}
+
+.sec2 img{
+    width: 80%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    margin-top: 40px;
+    border-radius: 30px;
+}
+
+.sec2 img:hover{
+    transform: scale(1.1); 
+    transition: transform 1s;
+    border: 0.1px solid red; 
+}
+
+.sec2 button:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: darkgreen;
+    color: black;
+}
+
+.sec2 .holi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.sec2 .holiday {
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.sec2 .ticket {
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.sec2 .insurance {
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+
+
+.sec2 button{
+    padding: 5px 20px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.sec2 button a{
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.sec2 .holiday h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sec2 .holiday p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.sec2 .ticket h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sec2 .ticket p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.sec2 .insurance h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sec2 .insurance p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+/* second div  */
+
+.sec2 .vis{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.sec2 .visa {
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.sec2 .hotel {
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.sec2 .con {
+    background-color: white;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 60vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.sec2 .visa h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sec2 .visa p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.sec2 .hotel h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sec2 .hotel p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+.sec2 .con h2{
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+
+.sec2 .con p{
+    font-family: sans-serif;
+    margin-top: 5px;
+}
+
+/* section 3 tour Packages  */
+
+.sec3{
+    padding: 10px 30px ;
+    margin-top: 90px;
+    align-items: center;
+    text-align: center;
+}
+
+.sec3 #rate:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: darkred;
+}
+
+.sec3 #rate2:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color: darkred;
+}
+
+.sec3 button:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+.sec3 button a:hover{
+    color: blue;
+}
+
+.sec3 h6{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT',  sans-serif;
+    font-style: italic;
+}
+
+.sec3 .pack{
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec3 #rate{
+    background-color:darkgreen;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    height: 50vh;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.sec3 #rate2{
+    background-color:rgb(160, 98, 17);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+    height: 50vh;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.sec3 #rate h1{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 38px;
+    font-family: cursive;
+}
+
+.sec3 #rate h2{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.sec3 #rate h3{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.sec3 #rate h4{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.sec3 #rate p{
+    color: yellow;
+    margin-top: 18px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.sec3 #rate2 h1{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 38px;
+    font-family: cursive;
+}
+
+.sec3 #rate2 h2{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.sec3 #rate2 h3{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.sec3 #rate2 h4{
+    color: whitesmoke;
+    margin-top: 18px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.sec3 #rate2 p{
+    color: yellow;
+    margin-top: 18px;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.fa-star{
+    color: yellow;
+}
+
+.sec3 button{
+    padding:10px 30px;
+    border-radius: 15px;
+    margin-top: 18px;
+    border: none;
+}
+
+.sec3 button a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/* special offer section  */
+
+.sec4{
+    padding: 10px 30px;
+    margin-top: 100px;
+    text-align: center;
+}
+.sec4 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT',  sans-serif;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.sec4 p{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 30px;
+}
+
+.sec4 .special{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px; 
+    text-align: center;
+}
+
+.sec4 .special2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.sec4 img{
+    width: 80%;
+    filter: brightness(0.6) contrast(1.2) blur(1px);
+    border-radius: 15px;
+    margin-top: 22px;
+}
+
+.sec4 .mal {
+    background-color:beige;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    height: 63vh;
+    border-radius: 40px;
+    width: 30%;
+}
+
+.sec4 h2{
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.sec4 h3 {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+}
+
+.sec4 h4 {
+    margin-top: 5px;
+}
+
+.sec4 h4 a {
+    text-decoration: line-through;
+    color: red;
+}
+
+.sec4 button {
+    padding: 5px 20px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.sec4 button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.sec4 .mal:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color:whitesmoke;
+    border: 0.1px solid red;
+}
+
+/* testimony secion  */
+
+.sec5 {
+    padding: 10px 30px;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+}
+
+.sec5 h1{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT',  sans-serif;
+    font-style: italic;
+}
+
+.testimony {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sec5 img{
+    width: 70%;
+    border-radius: 20px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.sec5 img:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    background-color:whitesmoke;
+    border: 0.1px solid red;
+}
+
+.sec5 h2{
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.sec5 h3{
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.sec5 h2 .fa-star{
+    color: black;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+footer{
+    padding: 10px 30px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+footer h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+footer p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* media view  */
+
+@media screen and (max-width:768px){
+    nav ul{
+        display: none;
+        /* hambuger design */
+        flex-direction: column;
+        background: rgb(73, 65, 65);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    /* hambuger */
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    /* end of .hamburger */
+
+
+    nav ul li a{
+        color: white;
+    }
+
+    
+    nav h1 a{
+        font-size: 20px;
+    }
+
+    
+
+    
+
+    
+
+
+    /* section experience */
+
+    .sec1{
+        height: 55vh;
+        width: 100%;
+        /* padding: 20px; */
+        /* text-align: center; */
+    }
+
+    .sec1 h2 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .sec1 h1 {
+        font-size: 30px;
+        margin-top: 0px;
+    }
+
+    .sec1 p {
+        font-size: 15px;
+        margin-bottom: 30px;  
+    }
+
+    .sec1 button {
+        padding: 10px 20px;
+    }
+
+    .sec1 button a {
+        font-size: 15px;
+    }
+
+    /* section 2 Professional Services */
+
+    .sec2 h1 {
+        font-size: 30px;
+    }
+
+    .sec2 h2 {
+        font-size: 15px;
+    }
+
+    .sec2 p{
+        font-size: 20px;
+    }
+
+    .sec2 .holi{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .sec2 .vis{
+        flex-direction: column;
+    }
+
+    .sec2 .holiday{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+        margin-top: 35px;
+    }
+
+    .sec2 .ticket{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+
+    .sec2 .insurance{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+
+    /* second div  */
+
+    .sec2 .visa{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+        /* margin-top: 25px; */
+    }
+
+    .sec2 .hotel{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+
+    .sec2 .con{
+        width: 100%;
+        height: 60vh;
+        border-radius: 15px;
+        margin-top: 25px;
+    }
+
+    /* section 3 tour Packages */
+
+    .sec3 h6{
+        font-size: 30px;
+    }
+    
+    .sec3 .pack{
+        flex-direction: column;
+    }
+
+    .sec3 #rate{
+        width: 100%;
+    }
+
+    .sec3 #rate2{
+        width: 100%;
+    }
+
+    /* special offer section */
+
+    .sec4 h1{
+        font-size: 27px;
+    }
+
+    .sec4 .special{
+        flex-direction: column;
+    }
+
+    .sec4 .special2{
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .sec4 .mal{
+        width: 100%;
+        margin-top: 20px;
+        height: 50vh;
+    }
+
+    /* testimony  */
+
+    .sec5 h1 {
+        font-size: 30px;
+    }
+
+    .sec5 .testimony{
+        flex-direction: column;
+    }
+
+    .sec5 h2{
+        font-size: 20px;
+    }
+
+    footer h1{
+        font-size: 13px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+
+
+
+
+
+    
+
+
+
+}

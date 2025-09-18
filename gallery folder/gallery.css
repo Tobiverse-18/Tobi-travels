@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav h1 a{
+    font-family: "Playwrite AU NSW", cursive;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline;
+    padding: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav h1 a:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    color: blue;
+}
+
+/* hamburger */
+
+.hamburger{
+    display: none;
+}
+
+/* section gallery  */
+
+section{
+    padding: 10px 30px;
+    margin-top: 50px;
+}
+
+h2{
+    margin-top: 30px;
+    font-size: 50px;
+    color:honeydew;
+    text-shadow: 2px 2px 4px black;
+}
+
+div {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 40px;
+    background-color: white;
+}
+
+img{
+    width: 27%;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.ok {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+img:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+footer{
+    padding: 10px 30px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+footer h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+footer p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+/* media view  */
+
+@media screen and (max-width:768px){
+    nav ul{
+        display: none;
+        /* hambuger design */
+        flex-direction: column;
+        background: rgb(73, 65, 65);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+
+    /* hambuger */
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    nav h1 a{
+        font-size: 20px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    /* end of .hamburger */
+
+    section {
+        margin-top: 40px;
+    }
+
+    section h2 {
+        font-size: 30px;
+        margin-top: 30px;
+    }
+
+    section div {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    footer h1{
+        font-size: 13px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}
+

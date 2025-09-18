@@ -1,0 +1,245 @@
+*{
+    font-family: 'Franklin Gothic Medium',  sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* nav bar  */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: white;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav h1 a{
+    font-family: "Playwrite AU NSW", cursive;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+nav ul li{
+    display: inline;
+    padding: 7px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+nav h1 a:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    color: blue;
+}
+
+/* hamburger */
+
+.hamburger{
+    display: none;
+}
+
+/* contact us section  */
+
+.one{
+    background-image: url("IMG_7501.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin-top: 90px;
+    padding: 10px 30px;
+    align-items:center;
+    text-align: center;
+}
+
+.one h6{
+    font-size: 100px;
+    font-family: "Playwrite AU NSW", cursive;
+    font-style: italic;
+    /* margin-bottom: 30px; */
+    /* margin-top: 100px; */
+    color:bisque;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;
+}
+
+.one h1 {
+    font-size: 100px;
+    font-family: cursive;
+    font-style: italic;
+    margin-bottom: 30px;
+    /* margin-top: 100px; */
+    color: white;
+    text-shadow: -2px -2px 0 black,
+    2px -2px 0 black,
+    -2px 2px 0 black,
+    2px 2px 0 black;  
+}
+
+.two {
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.two h2{
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+.two h3{
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.two p{
+    margin-top: 10px;
+}
+
+.two .okay {
+    padding-right: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    background-color: rgb(231, 218, 218);
+    border: none;
+    margin-top: 30px;
+}
+
+.two button{
+    padding: 10px 30px;
+    margin-top: 30px;
+    border: none;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.two button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+footer{
+    padding: 10px 30px;
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+footer h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+footer p{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+/* media view  */
+@media screen and (max-width:768px){
+    nav ul{
+        display: none;
+        /* hambuger design */
+        flex-direction: column;
+        background: rgb(73, 65, 65);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        padding: 10px 15px;
+        border-radius: 10px;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+
+    /* hambuger */
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    nav h1 a{
+        font-size: 20px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    /* end of .hamburger */
+
+
+    .one{
+        height: 55vh;
+        width: 100%;
+        /* padding: 20px; */
+        /* text-align: center; */
+    }
+
+    .one h6 {
+        font-size: 30px;
+        margin-top: 70px;
+    }
+
+    .one h1 {
+        font-size: 50px;
+        margin-top: 10px;
+    }
+
+    .two{
+        flex-direction: column;
+    }
+
+    .two h2{
+        margin-top: 50px;
+        font-size: 45px;
+        /* color: blue; */
+    }
+
+    .form{
+        margin-top: 10px;
+    }
+
+    .two .okay {
+    padding-right: 100px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 5px;
+    background-color: rgb(231, 218, 218);
+    border: none;
+    margin-top: 30px;
+    }
+
+    footer h1{
+        font-size: 13px;
+    }
+
+    footer p{
+        font-size: 15px;
+    }
+}
