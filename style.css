@@ -18,6 +18,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1;
+    /* transition: background-color 0.3s, color 0.3s; */
 }
 
 nav h1 a{
@@ -46,6 +47,100 @@ nav h1 a:hover{
     transition: transform 1s;
     color: blue;
 }
+
+
+
+/* Dark mode */
+body.dark-mode {
+  background-color: black;
+  color: #ffffff;
+}
+
+body.dark-mode nav{
+    background-color: black;
+}
+
+body.dark-mode nav h1 a{
+    color: white;
+}
+
+body.dark-mode nav h1 a:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    color: yellow;
+}
+
+body.dark-mode .hamburger {
+    color: #ffffff;
+}
+
+#darkModeToggle {
+    padding: 5px 11px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: black;
+    transition: all 0.3;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+body.dark-mode #darkModeToggle{
+    background-color: white;
+}
+
+
+
+
+/* darkmode edit for all text  */
+
+body.dark-mode .sec2 h1{
+    color: white;
+}
+
+body.dark-mode .sec2 .holi h2{
+    color: black;
+}
+
+body.dark-mode .sec2 .holi p{
+    color: black;
+}
+
+body.dark-mode .sec2 .vis h2{
+    color: black;
+}
+
+body.dark-mode .sec2 .vis p{
+    color: black;
+}
+
+body.dark-mode .sec4  .special h2{
+    color: black;
+}
+
+body.dark-mode .sec4  .special h3{
+    color: black;
+}
+
+body.dark-mode .sec4  .special h4{
+    color: black;
+}
+
+body.dark-mode .sec4  .special2 h2{
+    color: black;
+}
+
+body.dark-mode .sec4  .special2 h3{
+    color: black;
+}
+
+body.dark-mode .sec4  .special2 h4{
+    color: black;
+}
+
 
 /* hamburger */
 
@@ -124,7 +219,7 @@ nav h1 a:hover{
 
 .sec1 h2 {
     font-size: 60px;
-    font-family: cursive;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     margin-bottom: 30px;
     margin-top: 100px;
@@ -165,7 +260,7 @@ nav h1 a:hover{
 .sec1 button a{
     color: greenyellow;
     text-decoration: none;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
     font-size: 20px;
 }
 
@@ -423,70 +518,70 @@ nav h1 a:hover{
     color: whitesmoke;
     margin-top: 18px;
     font-size: 38px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate h2{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 30px;
     font-style: italic;
 }
 
 .sec3 #rate h3{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate h4{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 15px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate p{
     color: yellow;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 15px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate2 h1{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 38px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate2 h2{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 30px;
     font-style: italic;
 }
 
 .sec3 #rate2 h3{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 20px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate2 h4{
     color: whitesmoke;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 15px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .sec3 #rate2 p{
     color: yellow;
-    margin-top: 18px;
+    margin-top: 10px;
     font-size: 15px;
-    font-family: cursive;
+    font-family: "Playwrite AU NSW", cursive;
 }
 
 .fa-star{
@@ -494,15 +589,15 @@ nav h1 a:hover{
 }
 
 .sec3 button{
-    padding:10px 30px;
+    padding:8px 30px;
     border-radius: 15px;
-    margin-top: 18px;
+    margin-top: 10px;
     border: none;
 }
 
 .sec3 button a{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     font-style: italic;
 }
@@ -733,7 +828,7 @@ footer p{
 
     .sec1 h2 {
         font-size: 20px;
-        margin-top: 0px;
+        margin-top: 20px;
     }
 
     .sec1 h1 {
@@ -743,11 +838,12 @@ footer p{
 
     .sec1 p {
         font-size: 15px;
-        margin-bottom: 30px;  
+        margin-bottom: 0px;  
     }
 
     .sec1 button {
         padding: 10px 20px;
+        margin-top: 20px;
     }
 
     .sec1 button a {
@@ -839,6 +935,35 @@ footer p{
         width: 100%;
     }
 
+    .sec3 #rate h1{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .sec3 #rate h2{
+        font-size: 25px;
+    }
+
+    .sec3 #rate h3{
+        font-size: 18px;
+    }
+
+
+    .sec3 #rate2 h1{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .sec3 #rate2 h2{
+        font-size: 25px;
+    }
+
+    .sec3 #rate2 h3{
+        font-size: 18px;
+    }
+
+    
+
     /* special offer section */
 
     .sec4 h1{
@@ -880,6 +1005,60 @@ footer p{
     footer p{
         font-size: 15px;
     }
+
+
+    /* darkmode edit for all text  */
+
+body.dark-mode .sec2 h1{
+    color: white;
+}
+
+body.dark-mode .sec2 .holi h2{
+    color: black;
+}
+
+body.dark-mode .sec2 .holi p{
+    color: black;
+}
+
+body.dark-mode .sec2 .vis h2{
+    color: black;
+}
+
+body.dark-mode .sec2 .vis p{
+    color: black;
+}
+
+body.dark-mode .sec4  .special h2{
+    color: black;
+}
+
+body.dark-mode .sec4  .special h3{
+    color: black;
+}
+
+body.dark-mode .sec4  .special h4{
+    color: black;
+}
+
+body.dark-mode .sec4  .special2 h2{
+    color: black;
+}
+
+body.dark-mode .sec4  .special2 h3{
+    color: black;
+}
+
+body.dark-mode .sec4  .special2 h4{
+    color: black;
+}
+
+body.dark-mode #menuIcon {
+    color: #ffffff;
+}
+
+
+
 
 
 

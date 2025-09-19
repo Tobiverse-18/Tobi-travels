@@ -43,6 +43,48 @@ nav h1 a:hover{
     color: blue;
 }
 
+/* Dark mode */
+body.dark-mode {
+  background-color: black;
+  color: #ffffff;
+}
+
+body.dark-mode nav{
+    background-color: black;
+}
+
+body.dark-mode nav h1 a{
+    color: white;
+}
+
+body.dark-mode nav h1 a:hover{
+    transform: scale(1.1);
+    transition: transform 1s;
+    color: yellow;
+}
+
+body.dark-mode .hamburger {
+    color: #ffffff;
+}
+
+#darkModeToggle {
+    padding: 5px 11px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    background-color: black;
+    transition: all 0.3;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.1);
+    transition: transform 1s;
+}
+
+body.dark-mode #darkModeToggle{
+    background-color: white;
+}
+
 /* hamburger */
 
 .hamburger{
@@ -110,7 +152,7 @@ footer p{
 /* media view  */
 
 @media screen and (max-width:768px){
-    nav ul{
+     nav ul{
         display: none;
         /* hambuger design */
         flex-direction: column;
@@ -123,22 +165,26 @@ footer p{
         border-radius: 10px;
     }
 
-    nav ul li a{
-        color: white;
-    }
-
     /* hambuger */
 
     .nav-links.active{
         display: flex;
     }
 
-    nav h1 a{
-        font-size: 20px;
-    }
-
     .hamburger{
         display: block;
+    }
+
+    /* end of .hamburger */
+
+
+    nav ul li a{
+        color: white;
+    }
+
+    
+    nav h1 a{
+        font-size: 20px;
     }
 
     /* end of .hamburger */

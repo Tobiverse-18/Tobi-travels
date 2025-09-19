@@ -28,3 +28,26 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 
 items.forEach(item => observer.observe(item));
+
+// darkmode
+
+const toggle = document.getElementById('darkModeToggle');
+
+// Load saved preference
+if (localStorage.getItem('darkMode') === 'enabled') {
+  document.body.classList.add('dark-mode');
+  toggle.textContent = '☀️';
+}
+
+// Toggle dark mode on click
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.setItem('darkMode', 'enabled');
+    toggle.textContent = '☀️';
+  } else {
+    localStorage.setItem('darkMode', 'disabled');
+    toggle.textContent = '🌙';
+  }
+});
