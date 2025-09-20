@@ -90,3 +90,37 @@ window.addEventListener("load", () => {
     }, 800); // wait for fade-out
   }, 2500); // loader stays ~2.5s before fading
 });
+
+// Typewriter effect
+const words = ["Amazing Destinations", "Unforgettable Adventures", "Memories That Last", "Travel With Confidence"];
+let i = 0;
+let j = 0;
+let currentWord = "";
+let isDeleting = false;
+const speed = 150;
+
+function type() {
+  currentWord = words[i];
+  const typeSpan = document.getElementById("typewriter");
+
+  if (isDeleting) {
+    typeSpan.textContent = currentWord.substring(0, j--);
+    if (j < 0) {
+      isDeleting = false;
+      i = (i + 1) % words.length;
+      setTimeout(type, 500);
+    } else {
+      setTimeout(type, speed / 2);
+    }
+  } else {
+    typeSpan.textContent = currentWord.substring(0, j++);
+    if (j > currentWord.length) {
+      isDeleting = true;
+      setTimeout(type, 1500);
+    } else {
+      setTimeout(type, speed);
+    }
+  }
+}
+
+document.addEventListener("DOMContentLoaded", type);
