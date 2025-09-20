@@ -6,6 +6,7 @@
     /* overflow: hidden; */
 }
 
+
 /* nav bar  */
 
 nav{
@@ -21,11 +22,29 @@ nav{
     /* transition: background-color 0.3s, color 0.3s; */
 }
 
-nav h1 a{
+/* nav h1 a{
     font-family: "Playwrite AU NSW", cursive;
     color: black;
     font-size: 30px;
     text-decoration: none;
+} */
+
+nav a img{
+    width: 25%;
+    border-radius: 1500px;
+}
+
+nav a img  {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 nav ul li{
@@ -61,6 +80,10 @@ body.dark-mode nav{
 }
 
 body.dark-mode nav h1 a{
+    color: white;
+}
+
+body.dark-mode nav ul li a{
     color: white;
 }
 
@@ -200,26 +223,26 @@ body.dark-mode .sec4  .special2 h4{
 /* section experience  */
 
 .sec1{
-    background-image: url("images/feem_6B0FE_IMG_7412 - Edited.jpg_edited.jpg");
+    background-image: url("images/Back .JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 130vh;
     margin-top: 90px;
     padding: 10px 30px;
     align-items:center;
     text-align: center;
 }
 
-.sec1 .okay {
+/* .sec1 .okay {
 	-webkit-animation: flip-scale-2-hor-bottom 0.5s linear both;
 	animation: flip-scale-2-hor-bottom 0.5s linear both;
-}
+} */
 
 
 .sec1 h2 {
     font-size: 60px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     margin-bottom: 30px;
     margin-top: 100px;
@@ -227,26 +250,30 @@ body.dark-mode .sec4  .special2 h4{
     text-shadow: -2px -2px 0 black,
     2px -2px 0 black,
     -2px 2px 0 black,
-    2px 2px 0 black;  
+    2px 2px 0 black; 
 }
 
 .sec1 h1 {
     font-size: 80px;
-    font-family: "Playwrite AU NSW", cursive;
-    margin-bottom: 20px;
-    color: yellowgreen;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    color: yellow;
     z-index: 1;
     text-shadow: -2px -2px 0 black,
     2px -2px 0 black,
     -2px 2px 0 black,
-    2px 2px 0 black;                 
+    2px 2px 0 black;              
 }
 
 .sec1 p {
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times,  serif;
-    margin-bottom: 60px;
-    color: whitesmoke;
+    margin-top: 50px;
+    color: white;
+    text-shadow: -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;
 }
 
 .sec1 button{
@@ -254,7 +281,7 @@ body.dark-mode .sec4  .special2 h4{
     background-color: black;
     border: none;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 .sec1 button a{
@@ -812,6 +839,14 @@ body.light-mode #backToTop svg {
 /* media view  */
 
 @media screen and (max-width:768px){
+
+    /* nav{
+        justify-content: space-around;
+    } */
+
+    nav a img{
+    width: 35%;
+    }
     nav ul{
         display: none;
         /* hambuger design */
@@ -847,6 +882,12 @@ body.light-mode #backToTop svg {
         font-size: 20px;
     }
 
+    #darkModeToggle{
+        margin-right: 15px;
+        margin-left: auto;
+        /* position: fixed; */
+    }
+
     
 
     
@@ -865,22 +906,23 @@ body.light-mode #backToTop svg {
 
     .sec1 h2 {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: -80px;
     }
 
     .sec1 h1 {
         font-size: 30px;
-        margin-top: 0px;
+        margin-bottom: -30px;
     }
 
     .sec1 p {
         font-size: 15px;
-        margin-bottom: 0px;  
+        margin-bottom: 30px;  
     }
 
     .sec1 button {
         padding: 10px 20px;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .sec1 button a {

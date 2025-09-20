@@ -74,3 +74,4 @@ const toggleMode = document.getElementById("modeToggle"); // your existing mode 
 toggleMode?.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
 });
+

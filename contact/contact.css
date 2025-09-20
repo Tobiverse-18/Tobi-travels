@@ -60,6 +60,11 @@ body.dark-mode nav h1 a{
     color: white;
 }
 
+body.dark-mode nav ul li a{
+    color: white;
+}
+
+
 body.dark-mode nav h1 a:hover{
     transform: scale(1.1);
     transition: transform 1s;
@@ -242,6 +247,11 @@ body.light-mode #backToTop svg {
 
 /* media view  */
 @media screen and (max-width:768px){
+
+    nav a img{
+    width: 35%;
+    }
+    
     nav ul{
         display: none;
         /* hambuger design */
