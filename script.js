@@ -157,3 +157,13 @@ setInterval(() => {
   current = (current + 1) % testimonials.length;
   showTestimonial(current);
 }, 5000);
+
+// faq section 
+const faqs = document.querySelectorAll(".faq-item");
+
+faqs.forEach(item => {
+  const question = item.querySelector(".faq-question");
+  question.addEventListener("click", () => {
+    item.classList.toggle("active");
+  });
+});
