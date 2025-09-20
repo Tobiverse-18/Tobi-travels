@@ -75,3 +75,18 @@ toggleMode?.addEventListener("click", () => {
   document.body.classList.toggle("light-mode");
 });
 
+// loader 
+
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  const content = document.getElementById("content");
+
+  // Fade out loader
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.style.display = "block";
+    }, 800); // wait for fade-out
+  }, 2500); // loader stays ~2.5s before fading
+});
