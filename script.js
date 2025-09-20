@@ -124,3 +124,36 @@ function type() {
 }
 
 document.addEventListener("DOMContentLoaded", type);
+
+// testimony slide 
+
+const testimonials = document.querySelectorAll(".testimonial");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+let current = 0;
+
+function showTestimonial(index) {
+  testimonials.forEach((t, i) => {
+    t.classList.remove("active");
+    if (i === index) {
+      t.classList.add("active");
+    }
+  });
+}
+
+nextBtn.addEventListener("click", () => {
+  current = (current + 1) % testimonials.length;
+  showTestimonial(current);
+});
+
+prevBtn.addEventListener("click", () => {
+  current = (current - 1 + testimonials.length) % testimonials.length;
+  showTestimonial(current);
+});
+
+// Optional: Auto-slide every 5 seconds
+setInterval(() => {
+  current = (current + 1) % testimonials.length;
+  showTestimonial(current);
+}, 5000);
